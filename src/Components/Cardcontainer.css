@@ -1,0 +1,143 @@
+.card-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  background-color: #f7f7f7;
+}
+
+.card-container:hover .badge {
+  animation: badgeBounce 1s infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.badge-box{
+  display: fles;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin-right: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  animation: none;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: badgePulse 1s infinite;
+}
+
+@keyframes badgeBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes badgePulse {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.card-body {
+  flex: 1;
+  overflow-y: auto; /* Update this line */
+}
+
+.card-title {
+ 
+  font-size: 18px; /* Change the font size */
+  font-weight: bold; /* Make the font bold */
+  color: #333; /* Change the text color */
+  
+  font-family: Arial, sans-serif;
+  animation: textReveal 0.5s forwards;
+}
+
+.card-text {
+ 
+  margin-bottom: 0;
+  animation: textReveal 0.5s forwards;
+}
+
+@keyframes textReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.read-more-btn {
+  margin-top: 5px;
+  margin-bottom: 0;
+  transition: background-color 0.2s ease-in-out;
+  animation: btnPulse 0.5s infinite;
+}
+
+.read-more-btn:hover {
+  background-color: #333;
+}
+
+@keyframes btnPulse {
+  0% {
+    background-color: #333;
+  }
+  50% {
+    background-color: #444;
+  }
+  100% {
+    background-color: #333;
+  }
+}
+
+.card-container {
+  animation: cardShadow 0.5s forwards;
+}
+
+@keyframes cardShadow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  }
+}
+
