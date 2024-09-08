@@ -1,6 +1,13 @@
 # HeadlinesHub
 ================
 
+## Demo
+-----------
+The API provider did not allowed for free deployment....so here is the demo video link : https://drive.google.com/file/d/19NZa726rbiizM1Yl9K_dU7kNQUfoy3jm/view?usp=drive_link
+
+Deployed link:https://headlines-hub-by-akarsh-singh.netlify.app/    (but you will not be able to see any articles due to restrictions provided by the API provider)
+
+
 ## Overview
 -----------
 
@@ -12,7 +19,6 @@ HeadlinesHub is a React-based news application that delivers the latest top head
 * **Real-time News**: Get the latest headlines from trusted sources.
 * **Responsive Design**: Optimized for all device sizes, from desktops to mobile.
 * **News Categories**: Filter news by categories like technology, sports, politics, and more.
-* **Search Functionality**: Easily find news by keywords or topics.
 * **User-friendly Interface**: Clean and modern design powered by React and Bootstrap.
 * **Progressive Web App (PWA)**: Can be installed on your mobile device for a native-like experience.
 
